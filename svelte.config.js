@@ -20,7 +20,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: dev ? '' : '/MohamedHamdy28.github.io'
+			base: dev ? '' : '/IVIosab.github.io'
 		}
 	}
 };
