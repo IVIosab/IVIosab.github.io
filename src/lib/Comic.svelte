@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Comic } from '../interfaces/comic';
+	import loading from '$lib/images/loading.jpg';
 
 	async function getId(): Promise<number> {
 		const params = new URLSearchParams();
@@ -39,7 +40,7 @@
 	<h2>Here's a comic</h2>
 	{#await retriveComic()}
 		<h3 id="comic-loading-title">loading...</h3>
-		<img id="comic-loading-img" src="/images/loading.jpg" alt="loading..." />
+		<img id="comic-loading-img" src={loading} alt="loading..." />
 	{:then comic}
 		<h3 id="comic-title">{comic.title}</h3>
 		<img id="comic-img" src={comic.img} alt={comic.alt} />

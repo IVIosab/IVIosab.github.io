@@ -1,8 +1,9 @@
 <script lang="ts">
+	import sleepingMosab from '$lib/images/sleepingMosab.png';
 </script>
 
 <div id="about">
-	<img src="/images/sleepingMosab.png" alt="my beautiful self" />
+	<img src={sleepingMosab} alt="my beautiful self" />
 	<article>
 		<h2>About Me</h2>
 		<p>I am a 3rd year Computer Science student in Innopolis University.</p>
